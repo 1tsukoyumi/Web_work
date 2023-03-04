@@ -139,7 +139,7 @@
     font-family: "Roboto", sans-serif;
   }
 
-  a {
+  .dk {
     color: #8a28f9;
     text-decoration: none;
     font-weight: bold;
@@ -157,6 +157,8 @@
     justify-content: center;
     margin-top: 24px;
     margin-bottom: 0;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
 
   .pass {
@@ -195,6 +197,15 @@
   img {
     padding-top: 6px;
   }
+
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
 }
 /* PC */
 @media screen and (min-width: 1124px) and (max-width: 1224px) {
@@ -204,6 +215,14 @@
   .highlight {
     font-size: 86px;
   }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
 }
 /* PC */
 @media screen and (min-width: 1024px) and (max-width: 1123px) {
@@ -212,6 +231,14 @@
   }
   .highlight {
     font-size: 76px;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
 }
 /* tablet */
@@ -362,6 +389,8 @@
     margin-top: 24px;
     margin-bottom: 0;
     font-size: 18px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
 
   .pass {
@@ -399,6 +428,14 @@
 
   img {
     padding-top: 6px;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
 }
 /* Mobile */
@@ -549,6 +586,8 @@
     margin-top: 24px;
     margin-bottom: 0;
     font-size: 18px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
 
   .pass {
@@ -586,5 +625,13 @@
 
   img {
     padding-top: 6px;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
 }

@@ -8,26 +8,23 @@ btn.addEventListener("click", function () {
 });
 
 //bắt lỗi đăng nhập
-$("#btn-login").click(function () {
-  //lấy thông tin user
-  var data_login = {}
-  data_login.user = $("#input-user").val()
-  data_login.pass = $("#input-pass").val()
-
-  //gửi yêu cầu đến api
+$("#btn_login").click(function () {
+  var dataUserLogin = {};
+  dataUserLogin.mail = $("#login_mail").val(); //ô nhập mail login - id = login_mail
+  dataUserLogin.pass = $("#login_pass").val(); //ô nhập pass login - id = login_pass
   $.ajax({
-    URL: "https://gamenation-vn.onrender.com/auth/login/1",
+    url: "https://gamenation-vn.onrender.com/auth/login/1",
     type: "POST",
-    data: data_login,
-    success: function(result) {
-        //đăng nhập thành công
-        if (result == true) {
-            console.log('Đăng nhập thành công!');
-        } 
-        //đăng nhập thất bại
-        else {
-            console.error('Sai tài khoản hoặc mật khẩu');
-        }
+    data: dataUserLogin,
+    success: function (result) {
+      console.log(result);
+      if (result == "massage:true") {
+        window.location.href = "text.html";
+      } else if (result == "massage:fasle") {
+        $(".er").css('display', 'block');
+      } else {
+        $(".er").css('display', 'none');
+      }
     },
   });
 });
