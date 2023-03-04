@@ -16,14 +16,14 @@ $("#btn_login").click(function () {
     url: "https://gamenation-vn.onrender.com/auth/login/1",
     type: "POST",
     data: dataUserLogin,
-    success: function (result) {
-      console.log(result);
-      if (result == "massage:true") {
-        window.location.href = "text.html";
-      } else if (result == "massage:fasle") {
-        $(".er").css('display', 'block');
-      } else {
-        $(".er").css('display', 'none');
+    success: function (result, status, xhr) {
+      if (xhr.status == 200) {
+        window.location.replace("#");
+      }
+    },
+    error: function (xhr, status) {
+      if (xhr.status == 403) {
+        $(".er").show();
       }
     },
   });
