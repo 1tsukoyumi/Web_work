@@ -8,14 +8,14 @@ btn.addEventListener("click", function () {
 });
 
 //bắt lỗi đăng nhập
-$("#btn_login").click(function (event) {
-  var dataUserLogin = {};
-  dataUserLogin.mail = $("#login_mail").val(); //ô nhập mail login - id = login_mail
-  dataUserLogin.pass = $("#login_pass").val(); //ô nhập pass login - id = login_pass
-
-  if (dataUserLogin.mail.trim() == '' || dataUserLogin.pass.trim() == '') {
+var dataUserLogin = {};
+dataUserLogin.mail = $("#login_mail").val(); //ô nhập mail login - id = login_mail
+dataUserLogin.pass = $("#login_pass").val(); //ô nhập pass login - id = login_pass
+$("#btn_login").click(function () {
+  if (dataUserLogin.mail.trim() == "" || dataUserLogin.pass.trim() == "") {
     $(".login_continue").show();
   } else {
+    $(".login_continue").hide();
     $.ajax({
       url: "https://gamenation-vn.onrender.com/auth/login/1",
       type: "POST",
@@ -28,9 +28,22 @@ $("#btn_login").click(function (event) {
       error: function (xhr, status) {
         if (xhr.status == 403) {
           $(".er").show();
-          $(".login_continue").css('display', 'none');
         }
       },
     });
+  }
+});
+//ẩn thông báo khi nhập mail
+$("#login_mail").on("input", function () {
+  var user = $(this).val();
+  if (user.trim() !== "") {
+    $(".login_continue").hide();
+  }
+});
+//ẩn thông báo khi nhập passs
+$("#login_pass").on("input", function () {
+  var pass = $(this).val();
+  if (pass.trim() !== "") {
+    $(".login_continue").hide();
   }
 });
