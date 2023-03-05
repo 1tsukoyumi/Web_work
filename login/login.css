@@ -20,6 +20,21 @@
     background: #f5edff;
   }
 
+  .ctn-logo {
+    display: flex;
+    height: 210px;
+  }
+  .welcome {
+    padding-top: 160px;
+    margin-bottom: -20px;
+  }
+
+  #logo {
+    width: 220px;
+    height: 220px;
+    margin-left: -20px;
+  }
+
   .right {
     flex: 5;
     display: flex;
@@ -33,9 +48,12 @@
     color: #1e1e1e;
     font-weight: normal;
     font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 140px;
   }
 
   .highlight {
+    padding-top: -50px;
     color: #7000ff;
     font-family: "DM Sans";
     font-size: 96px;
@@ -100,7 +118,7 @@
     border-radius: 16px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .input-pass {
@@ -216,6 +234,20 @@
   .h1 {
     font-size: 26px;
   }
+  .ctn-logo {
+    display: flex;
+    height: 190px;
+  }
+  .welcome {
+    padding-top: 140px;
+    margin-bottom: -20px;
+  }
+
+  #logo {
+    width: 200px;
+    height: 200px;
+    margin-left: -20px;
+  }
   .highlight {
     font-size: 86px;
   }
@@ -266,6 +298,20 @@
 @media screen and (min-width: 1025px) and (max-width: 1123px) {
   .h1 {
     font-size: 16px;
+  }
+  .ctn-logo {
+    display: flex;
+    height: 160px;
+  }
+  .welcome {
+    padding-top: 130px;
+    margin-bottom: -20px;
+  }
+
+  #logo {
+    width: 190px;
+    height: 190px;
+    margin-left: -20px;
   }
   .highlight {
     font-size: 76px;
@@ -327,6 +373,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .ctn-logo {
+    display: flex;
+    height: 220px;
+  }
+  .welcome {
+    padding-top: 160px;
+    margin-bottom: -20px;
+  }
+
+  #logo {
+    width: 240px;
+    height: 240px;
+    margin-left: -20px;
   }
 
   h1 {
@@ -396,7 +456,7 @@
     border-radius: 16px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 32px;
   }
 
@@ -526,6 +586,19 @@
     align-items: center;
     justify-content: center;
   }
+  .ctn-logo {
+    display: flex;
+    height: 210px;
+  }
+  .welcome {
+    padding-top: 150px;
+    margin-bottom: -20px;
+  }
+  #logo {
+    width: 220px;
+    height: 220px;
+    /* margin-left: -20px; */
+  }
 
   h1 {
     font-family: "Roboto", sans-serif;
@@ -595,7 +668,7 @@
     border-radius: 16px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 32px;
   }
 
