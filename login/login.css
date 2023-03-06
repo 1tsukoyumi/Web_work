@@ -226,7 +226,7 @@
 /* PC */
 @media screen and (min-width: 1124px) and (max-width: 1224px) {
   .h1 {
-    font-size: 26px;
+    font-size: 30px;
   }
   .ctn-logo {
     display: flex;
@@ -298,8 +298,9 @@
     height: 160px;
   }
   .welcome {
-    padding-top: 130px;
+    padding-top: 140px;
     margin-bottom: -20px;
+    font-size: 29px;
   }
 
   #logo {
