@@ -104,8 +104,17 @@
   }
 
   .pass {
+    position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    background: #efefef;
+    border: 1px solid #a4a4a4;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .input-user {
@@ -181,21 +190,6 @@
     font-weight: bold;
     font-family: "Roboto", sans-serif;
   }
-
-  .pass {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #efefef;
-    border: 1px solid #a4a4a4;
-    border-radius: 16px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
   .pass span {
     position: absolute;
     right: 15px;
