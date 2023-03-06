@@ -31,6 +31,13 @@
     height: 220px;
     margin-left: -20px;
   }
+  .right {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+  }
   h1 {
     font-family: "Roboto", sans-serif;
     color: #1e1e1e;
@@ -50,13 +57,6 @@
     letter-spacing: 0em;
     text-align: right;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  .right {
-    flex: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
   }
   form {
     width: 100%;
@@ -103,6 +103,7 @@
     border-radius: 16px;
     box-sizing: border-box;
     margin-top: 0;
+    width: 100%;
   }
   img {
     width: 35px;
@@ -344,13 +345,13 @@
     height: 156px;
   }
   .welcome {
-    padding-top: 134px;
+    padding-top: 124px;
     margin-bottom: -20px;
-    font-size: 38px;
+    font-size: 43px;
   }
   #logo {
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     margin-left: -20px;
   }
 
@@ -374,9 +375,8 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   form {
-    width: 100%;
-    max-width: 650px;
-    height: 460px;
+    width: 560px;
+    height: 600px;
     padding: 30px 20px;
     box-sizing: border-box;
   }
@@ -385,7 +385,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 46px;
+    font-size: 42px;
     line-height: 46px;
     color: #000000;
     text-align: center;
@@ -401,8 +401,9 @@
     line-height: 0;
     color: red;
     margin: 0;
-    margin-top: 18px;
+    margin-top: 5px;
     text-align: center;
+    padding-top: 15px;
     display: none;
   }
 
@@ -427,13 +428,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 14px 24px;
+    padding: 24px 24px;
     background: #efefef;
     border: 1px solid #a4a4a4;
     border-radius: 16px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 22px;
   }
   .input-capcha {
@@ -441,7 +442,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 14px 24px;
+    padding: 24px 24px;
     background: #efefef;
     border: 1px solid #a4a4a4;
     border-radius: 16px;
@@ -458,7 +459,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px 5px;
+    padding: 18px 5px;
     background: #e2e2e2;
     border: 1px solid #a4a4a4;
     border-radius: 16px;
@@ -466,7 +467,7 @@
     box-sizing: border-box;
     margin-top: 0;
     margin-right: 10px;
-    font-size: 28px;
+    font-size: 30px;
   }
   #btn_submit {
     display: flex;
@@ -474,13 +475,13 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 14px;
+    padding: 22px;
     background: #7000ff;
     color: #efefef;
     border-radius: 16px;
     border: none;
     font-family: "Roboto", sans-serif;
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 15px;
   }
   #btn_submit:hover {
@@ -492,13 +493,13 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 14px;
+    padding: 22px;
     background: #a4a4a4;
     color: #efefef;
     border-radius: 16px;
     border: none;
     font-family: "Roboto", sans-serif;
-    font-size: 22px;
+    font-size: 26px;
   }
   #btn_back:hover {
     background-color: #7e7e7e;
@@ -506,7 +507,7 @@
   ::placeholder {
     color: #767676;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 26px;
   }
   .er {
     text-align: center;
@@ -531,19 +532,22 @@
     align-items: center;
     justify-content: center;
   }
+  .left {
+    height: 120px;
+  }
   .ctn-logo {
     display: flex;
-    height: 64px;
+    height: 25px;
   }
   .welcome {
-    padding-top: 105px;
+    padding-top: 64px;
     margin-bottom: -20px;
-    font-size: 18px;
+    font-size: 21px;
   }
   #logo {
-    width: 140px;
-    height: 140px;
-    margin-left: -20px;
+    width: 100px;
+    height: 100px;
+    margin-left: -10px;
   }
 
   h1 {
@@ -566,19 +570,18 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   form {
-    width: 100%;
-    max-width: 350px;
+    width: 290px;
     height: 460px;
     padding: 30px 20px;
     box-sizing: border-box;
   }
 
   h2 {
-    height: 36px;
+    height: 38px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 46px;
     color: #000000;
     text-align: center;
@@ -590,7 +593,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 0;
     color: red;
     margin: 0;
@@ -608,41 +611,41 @@
   .capcha {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     border-radius: 16px;
     box-sizing: border-box;
     margin-top: 0;
   }
   img {
-    width: 28px;
+    width: 22px;
   }
   .input-mail {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 14px 24px;
+    padding: 10px 24px;
     background: #efefef;
     border: 1px solid #a4a4a4;
-    border-radius: 16px;
+    border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    font-size: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
   }
   .input-capcha {
     flex: 6;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 14px 24px;
+    padding: 12px 24px;
     background: #efefef;
     border: 1px solid #a4a4a4;
-    border-radius: 16px;
+    border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
     margin-top: 0;
     margin-right: 10px;
-    font-size: 15px;
+    font-size: 12px;
   }
   .render-capcha {
     text-align: center;
@@ -651,15 +654,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 11px 18px;
+    padding: 10px 18px;
     background: #e2e2e2;
     border: 1px solid #a4a4a4;
-    border-radius: 16px;
+    border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
     margin-top: 0;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 16px;
   }
   #btn_submit {
     display: flex;
@@ -667,13 +670,13 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background: #7000ff;
     color: #efefef;
-    border-radius: 16px;
+    border-radius: 10px;
     border: none;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 15px;
   }
   #btn_submit:hover {
@@ -685,13 +688,13 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background: #a4a4a4;
     color: #efefef;
-    border-radius: 16px;
+    border-radius: 10px;
     border: none;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
   }
   #btn_back:hover {
     background-color: #7e7e7e;
@@ -699,15 +702,15 @@
   ::placeholder {
     color: #767676;
     font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
   }
   .er {
     text-align: center;
     color: red;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: none;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
   }
 }

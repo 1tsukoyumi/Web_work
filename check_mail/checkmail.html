@@ -23,14 +23,15 @@
       <div class="right">
         <form>
             <h2>Đặt lại mật khẩu của bạn</h2>
-            <h4 class="check_continue">Vui lòng nhập email để tìm tài khoản của bạn</h4>
-            
+            <h4 class="check_continue_mail">Vui lòng nhập email để tìm tài khoản của bạn</h4>
+            <h4 class="check_continue_otp">Bạn đã nhập sai mã xác thực, vui lòng thử lại</h4>
+
             <div class="mail">
                 <input class="input-mail" id="input_mail" type="text" placeholder="Email" required>
             </div>
             <div class="capcha">
                 <input class="input-capcha" id="input_capcha" type="text" placeholder="Nhập mã" required>
-                <input class="render-capcha" id="render_capcha" readonly>
+                <input class="render-capcha" id="render_capcha" disabled >
                 <img src="captcha.png" onclick="generateCaptcha()">
             </div>
             <div class="er">
