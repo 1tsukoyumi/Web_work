@@ -560,17 +560,17 @@
   }
   .ctn-logo {
     display: flex;
-    height: 210px;
+    height: 240px;
   }
   .welcome {
     font-size: 50px;
-    padding-top: 150px;
+    padding-top: 180px;
     margin-bottom: -20px;
   }
   #logo {
-    width: 220px;
-    height: 220px;
-    /* margin-left: -20px; */
+    width: 260px;
+    height: 260px;
+    margin-left: -20px;
   }
 
   h1 {
