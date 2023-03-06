@@ -1,0 +1,739 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+/* PC */
+@media screen and (min-width: 1025px) {
+  body {
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  .left {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5edff;
+  }
+  .ctn-logo {
+    display: flex;
+    height: 210px;
+  }
+  .welcome {
+    padding-top: 160px;
+    margin-bottom: -20px;
+  }
+
+  #logo {
+    width: 220px;
+    height: 220px;
+    margin-left: -20px;
+  }
+  .right {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+  }
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: #1e1e1e;
+    font-weight: normal;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 140px;
+  }
+
+  .highlight {
+    padding-top: -50px;
+    color: #7000ff;
+    font-family: "DM Sans";
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 0;
+    letter-spacing: 0em;
+    text-align: right;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  form {
+    width: 100%;
+    max-width: 450px;
+    height: 460px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+  h2 {
+    height: 55px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 0;
+    color: red;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 5px;
+    display: none;
+  }
+  .otp {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #efefef;
+    border: 1px solid #a4a4a4;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .pass {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #efefef;
+    border: 1px solid #a4a4a4;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .pass span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #8e44ad;
+    cursor: pointer;
+    display: none;
+  }
+
+  .pass input:valid ~ span {
+    display: block;
+  }
+
+  .pass span img.hide-btn::before {
+    content: "f070";
+  }
+
+  img {
+    padding-top: 6px;
+  }
+  .input-pass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 24px;
+    background: #efefef;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  .input-otp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 24px;
+    background: #efefef;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  #btn_submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 13px;
+    background: #7000ff;
+    color: #efefef;
+    border-radius: 16px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  #btn_submit:hover {
+    background-color: #450c8d;
+  }
+  #btn_back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 13px;
+    background: #a4a4a4;
+    color: #efefef;
+    border-radius: 16px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+  }
+  #btn_back:hover {
+    background-color: #7e7e7e;
+  }
+  ::placeholder {
+    color: #767676;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 0.5rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1124px) and (max-width: 1224px) {
+  .ctn-logo {
+    display: flex;
+    height: 135px;
+  }
+  .welcome {
+    padding-top: 100px;
+    margin-bottom: -20px;
+  }
+
+  #logo {
+    width: 165px;
+    height: 165px;
+    margin-left: -20px;
+  }
+  .highlight {
+    font-size: 82px;
+  }
+  form {
+    width: 100%;
+    max-width: 400px;
+    height: 460px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    height: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 46px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 0;
+    color: red;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+}
+/* PC */
+@media screen and (min-width: 1025px) and (max-width: 1123px) {
+  .ctn-logo {
+    display: flex;
+    height: 125px;
+  }
+  .welcome {
+    padding-top: 100px;
+    margin-bottom: -20px;
+    font-size: 32px;
+  }
+
+  #logo {
+    width: 160px;
+    height: 160px;
+    margin-left: -20px;
+  }
+  .highlight {
+    font-size: 76px;
+  }
+  form {
+    width: 100%;
+    max-width: 400px;
+    height: 460px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    height: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 0;
+    color: red;
+    margin-top: 8px;
+    margin-bottom: 0;
+    text-align: center;
+    display: none;
+    height: 20px;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 0.5rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  }
+}
+/* tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin: 0;
+    background-color: #f5edff;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ctn-logo {
+    display: flex;
+    height: 156px;
+  }
+  .welcome {
+    padding-top: 124px;
+    margin-bottom: -20px;
+    font-size: 43px;
+  }
+  #logo {
+    width: 200px;
+    height: 200px;
+    margin-left: -20px;
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: #1e1e1e;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .highlight {
+    color: #7000ff;
+    font-family: "DM Sans";
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 0;
+    letter-spacing: 0em;
+    text-align: right;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  form {
+    width: 560px;
+    height: 600px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    height: 68px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    height: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 0;
+    color: red;
+    margin: 0;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 0;
+    display: none;
+  }
+
+  .otp {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #efefef;
+    border: 1px solid #a4a4a4;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .pass {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #efefef;
+    border: 1px solid #a4a4a4;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .pass span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8e44ad;
+    cursor: pointer;
+    display: none;
+  }
+
+  .pass input:valid ~ span {
+    display: block;
+  }
+
+  .pass span img.hide-btn::before {
+    content: "f070";
+  }
+
+  img {
+    padding-top: 6px;
+    width: 40px;
+  }
+  .input-pass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 24px;
+    background: #efefef;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    font-size: 32px;
+  }
+  .input-otp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 24px;
+    background: #efefef;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    font-size: 32px;
+  }
+  #btn_submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 22px;
+    background: #7000ff;
+    color: #efefef;
+    border-radius: 16px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  #btn_submit:hover {
+    background-color: #450c8d;
+  }
+  #btn_back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 22px;
+    background: #a4a4a4;
+    color: #efefef;
+    border-radius: 16px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+  }
+  #btn_back:hover {
+    background-color: #7e7e7e;
+  }
+  ::placeholder {
+    color: #767676;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 0.5rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    background-color: #f5edff;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ctn-logo {
+    display: flex;
+    height: 210px;
+  }
+  .welcome {
+    padding-top: 150px;
+    margin-bottom: -20px;
+  }
+  #logo {
+    width: 220px;
+    height: 220px;
+    /* margin-left: -20px; */
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: #1e1e1e;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .highlight {
+    color: #7000ff;
+    font-family: "DM Sans";
+    font-size: 136px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: right;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  form {
+    width: 290px;
+    height: 460px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    height: 48px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 46px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 0;
+    color: red;
+    margin: 0;
+    margin-top: 0;
+    text-align: center;
+    display: none;
+  }
+
+  .mail {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .capcha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  img {
+    width: 22px;
+  }
+  .input-mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 24px;
+    background: #efefef;
+    border: 1px solid #a4a4a4;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .input-capcha {
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 24px;
+    background: #efefef;
+    border: 1px solid #a4a4a4;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  .render-capcha {
+    text-align: center;
+    font-style: italic;
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 18px;
+    background: #e2e2e2;
+    border: 1px solid #a4a4a4;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  #btn_submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 12px;
+    background: #7000ff;
+    color: #efefef;
+    border-radius: 10px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  #btn_submit:hover {
+    background-color: #450c8d;
+  }
+  #btn_back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 12px;
+    background: #a4a4a4;
+    color: #efefef;
+    border-radius: 10px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+  }
+  #btn_back:hover {
+    background-color: #7e7e7e;
+  }
+  ::placeholder {
+    color: #767676;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  }
+  .er {
+    text-align: center;
+    color: red;
+    margin-bottom: 0.5rem;
+    display: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+  }
+}

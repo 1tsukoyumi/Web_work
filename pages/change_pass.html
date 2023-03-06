@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change password</title>
+	<link rel="stylesheet" type="text/css" href="change_pass.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<h1>
+				<div class="ctn-logo">
+					<div class="welcome">Chào mừng bạn đến với</div>
+					<img src="logo.png" id="logo">
+				</div>
+				
+				<br>
+				<span class="highlight">Game Nation</span>
+			</h1>
+		</div>
+		<div class="right">
+			<form>
+				<h2>Đặt lại mật khẩu của bạn</h2>
+				<h4 class="change_continue">Vui lòng điền thông tin để tiếp tục</h4>
+				<h4 class="change_continue1">Mật khẩu không trùng khớp</h4>
+                <h4 class="change_continue2">Cập nhật mật khẩu thành công</h4>
+				<div class="pass">
+					<input class="input-pass" id="change_pass1" type="password" placeholder="Nhập mật khẩu mới" required>
+                    <span class="show-btn" id="show-btn1"><img src="Vector.svg" alt="Vector" onclick="checkpass()"></span>
+				</div>
+				<div class="pass">
+					<input class="input-pass" id="change_pass2" oninput="checkValues()" type="password" placeholder="Nhập lại mật khẩu" required>
+					<span class="show-btn" id="show-btn2"><img src="Vector.svg" alt="Vector" onclick="checkpass1()"></span>
+				</div>
+                <div class="otp">
+                    <input class="input-otp" id="input_otp" type="text" placeholder="Nhập mã OTP" disabled required>
+                </div>
+				<div class="er">
+                    <a>OTP không chính xác</a>
+                </div>
+                <button type="button" id="btn_submit">Gửi</button>
+                <button type="button" id="btn_back">Quay lại</button>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="change_pass.js"></script>
+</html>

@@ -41,7 +41,9 @@ $("#btn_submit").click(function () {
         data: data_sendmail,
         success: function (result, status, xhr) {
           if (xhr.status == 200) {
-            window.location.replace("https://www.google.com.vn/?hl=vi");
+            $(".er").hide();
+            setTimeout(function () {})
+            window.location.replace("../change_pass/change_pass.html");
           }
         },
         error: function (xhr, status) {
@@ -60,4 +62,6 @@ $("#input_mail").on("input", function () {
     $(".check_continue").hide();
   }
 });
-
+$("#btn_back").click(function () {
+  window.location.replace("../login/login.html");
+});
