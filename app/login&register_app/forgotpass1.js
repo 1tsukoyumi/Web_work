@@ -43,7 +43,7 @@ $("#btn_submit").click(function () {
           if (xhr.status == 200) {
             $(".er").hide();
             setTimeout(function () {})
-            window.location.replace("../change_pass/change_pass.html");
+            window.location.replace("../../pages/login&register_pages/forgotpass2.html");
           }
         },
         error: function (xhr, status) {

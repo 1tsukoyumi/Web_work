@@ -40,7 +40,7 @@ function checkValues() {
             $(".er").hide();
             $(".change_continue2").css({ display: "block", color: "#7CFC04",  });
             setTimeout(function () {
-              window.location.replace("../login/login.html");
+              window.location.replace("../../pages/login&register_pages/login.html");
             }, 2500);
             cleardata();
           }
